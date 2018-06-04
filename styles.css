@@ -1,0 +1,99 @@
+body {
+  background-color: black;
+  margin-left: 200px;
+  margin-right: 200px;
+
+}
+
+  /* header*/
+h1 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 50px;
+  color: white;
+  align-items: center;
+  text-align: center;
+  padding: 25px
+
+}
+
+  /* I couldnt figure out the search icon*/
+form {
+  display: flex;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 15px;
+  color: grey;
+  text-align: right;
+  margin-top: 0;
+
+}
+
+  /* big pic banner */
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  padding: 0 5px;
+  height: 400px;
+  width: 1050px;
+
+  }
+
+
+  /* One row?*/
+  .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 5px;
+  }
+
+  /* row images?*/
+  .row img {
+      display: flex;
+      flex-wrap: wrap;
+      vertical-align: bottom;
+  }
+
+  /* Four columns */
+  .column {
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 5px;
+      text-align: left;
+      color: white;
+    }
+
+/* Column images*/
+  .column img {
+      margin-top: 10px;
+      vertical-align: middle;
+      position: relative;
+      color: white;
+  }
+
+/* bttm left text */
+.bottom-left {
+    position: relative;
+    bottom: 30px;
+    left: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px black;
+    color: red;
+
+  }
+
+  /* makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+      .column {
+          flex: 50%;
+          max-width: 50%;
+      }
+
+  /* makes the two columns stack */
+  @media screen and (max-width: 600px) {
+      .column {
+          -ms-flex: 100%;
+          flex: 100%;
+          max-width: 100%;
+        }
